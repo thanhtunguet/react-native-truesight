@@ -1,6 +1,6 @@
 {
-  "name": "react-native-truesight",
-  "version": "0.1.0-rc1",
+  "name": "react-native-truesight-kit",
+  "version": "0.1.0-rc2",
   "description": "test",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -21,16 +21,13 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/thanhtunguet/react-native-truesight",
+  "repository": "https://github.com/thanhtunguet/react-native-truesight-kit",
   "author": "thanhtunguet <thanhtung.uet@gmail.com> (https://github.com/thanhtunguet)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/thanhtunguet/react-native-truesight/issues"
+    "url": "https://github.com/thanhtunguet/react-native-truesight-kit/issues"
   },
-  "homepage": "https://github.com/thanhtunguet/react-native-truesight#readme",
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
-  },
+  "homepage": "https://github.com/thanhtunguet/react-native-truesight-kit#readme",
   "resolutions": {
     "@types/react": "17.0.21"
   },

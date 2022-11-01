@@ -1,6 +1,6 @@
 {
-  "name": "react-native-truesight-example",
-  "description": "Example app for react-native-truesight",
+  "name": "react-native-truesight-kit-example",
+  "description": "Example app for react-native-truesight-kit",
   "version": "0.0.1",
   "private": true,
   "react-native": "index.tsx",

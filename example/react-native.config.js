@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   dependencies: {
-    'react-native-truesight': {
+    'react-native-truesight-kit': {
       root: path.join(__dirname, '..'),
     },
   },

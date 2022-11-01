@@ -1,15 +1,15 @@
-# react-native-truesight
+# react-native-truesight-kit
 Truesight React Native Package
 ## Installation
 
 ```sh
-npm install react-native-truesight
+npm install react-native-truesight-kit
 ```
 
 ## Usage
 
 ```js
-import { TruesightView } from "react-native-truesight";
+import { TruesightView } from "react-native-truesight-kit";
 
 // ...
 
