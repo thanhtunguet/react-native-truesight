@@ -13,7 +13,6 @@ type PathColorProps = Pick<PathProps, 'fill' | 'stroke'>;
 
 function clonePathElement(
   child: ReactElement<PathProps>,
-  solid: boolean,
   overrideProps: PathColorProps
 ): ReactElement<PathProps> {
   const { fill, stroke } = overrideProps;
@@ -24,8 +23,8 @@ function clonePathElement(
     child,
     props?.fill || props?.stroke
       ? {
-          fill: solid ? fill : props.fill,
-          stroke: solid ? stroke : props.stroke,
+          fill: fill ?? props.fill,
+          stroke: stroke ?? props.stroke,
         }
       : {},
     []
@@ -63,9 +62,9 @@ export const SvgIcon: FC<SvgIconProps> = (
 
   const { children } = element.props;
 
-  const linearStops = colors.map((color, index) => (
-    <Stop offset={locations[index]} stopColor={color} />
-  ));
+  if (locations.length !== colors.length) {
+    console.error('Locations and colors should be of the same length');
+  }
 
   return React.cloneElement(
     element,
@@ -74,22 +73,29 @@ export const SvgIcon: FC<SvgIconProps> = (
       .filter((child) => React.isValidElement(child))
       .map((child) => {
         const childNode: ReactElement = child as ReactElement;
-        if (childNode.type === 'path') {
-          return clonePathElement(child as ReactElement<PathProps>, solid!, {
-            fill,
-            stroke,
-          });
-        }
         if (childNode.type === 'defs') {
-          const { props: defProps } = childNode;
-          return React.cloneElement(
-            childNode,
-            defProps,
-            defProps.children.map(
-              (childStop: ReactElement<LinearGradientProps>) =>
-                cloneGradientDefs(childStop, linearStops)
-            )
-          );
+          if (!solid) {
+            const { props: defProps } = childNode;
+            const linearStops = colors?.map((color, index) => (
+              <Stop offset={locations[index]} stopColor={color} />
+            ));
+            return React.cloneElement(
+              childNode,
+              defProps,
+              defProps.children.map(
+                (childStop: ReactElement<LinearGradientProps>) =>
+                  cloneGradientDefs(childStop, linearStops)
+              )
+            );
+          }
+        }
+        if (childNode.type === 'path') {
+          if (solid) {
+            return clonePathElement(child as ReactElement<PathProps>, {
+              fill,
+              stroke,
+            });
+          }
         }
         return child;
       })

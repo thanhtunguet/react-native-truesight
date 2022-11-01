@@ -1,0 +1,9 @@
+@for $i from 1 through 10 {
+    .w#{$i}0 {
+        width: $i * 10%;
+    }
+
+    .h#{$i}0 {
+        height: $i * 10%;
+    }
+}

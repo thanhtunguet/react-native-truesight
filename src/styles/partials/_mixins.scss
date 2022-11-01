@@ -1,0 +1,36 @@
+@import "variables";
+@import "functions";
+
+@mixin spacing($property, $prefix, $size) {
+  $spacing_size: $size * 4px;
+
+  .#{$prefix}#{$size} {
+    #{$property}: $spacing_size $spacing_size;
+  }
+
+  .#{$prefix + "x"}#{$size} {
+    #{$property}-left: $spacing_size;
+    #{$property}-right: $spacing_size;
+  }
+
+  .#{$prefix + "y"}#{$size} {
+    #{$property}-top: $spacing_size;
+    #{$property}-bottom: $spacing_size;
+  }
+
+  .#{$prefix + "l"}#{$size} {
+    #{$property}-left: $spacing_size;
+  }
+
+  .#{$prefix + "r"}#{$size} {
+    #{$property}-right: $spacing_size;
+  }
+
+  .#{$prefix + "b"}#{$size} {
+    #{$property}-bottom: $spacing_size;
+  }
+
+  .#{$prefix + "t"}#{$size} {
+    #{$property}-top: $spacing_size;
+  }
+}

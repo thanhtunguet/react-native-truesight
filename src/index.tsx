@@ -1,32 +1,11 @@
-import {
-  requireNativeComponent,
-  UIManager,
-  Platform,
-  ViewStyle,
-} from 'react-native';
+export * from './components';
 
-const LINKING_ERROR =
-  `The package 'react-native-truesight' doesn't seem to be linked. Make sure: \n\n` +
-  Platform.select({ ios: "- You have run 'pod install'\n", default: '' }) +
-  '- You rebuilt the app after installing the package\n' +
-  '- You are not using Expo managed workflow\n';
-
-type TruesightProps = {
-  color: string;
-  style: ViewStyle;
-};
-
-const ComponentName = 'TruesightView';
-
-export const TruesightView =
-  UIManager.getViewManagerConfig(ComponentName) != null
-    ? requireNativeComponent<TruesightProps>(ComponentName)
-    : () => {
-        throw new Error(LINKING_ERROR);
-      };
-
-export * from './use-status-bar-style';
+export * from './hooks';
 
 export * from './services';
 
-export * from './components';
+export * from './styles';
+
+export * from './theming';
+
+export * from './TruesightView';

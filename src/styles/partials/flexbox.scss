@@ -1,0 +1,133 @@
+@import "mixins";
+
+.flex {
+  flex: 1
+}
+
+.flexGrow {
+  flex-grow: 1;
+}
+
+.flexShrink {
+  flex-shrink: 1;
+}
+
+.flexRow {
+  flex-direction: row;
+}
+
+.flexRowReverse {
+  flex-direction: row-reverse;
+}
+
+.flexCol {
+  flex-direction: column;
+}
+
+.flexColReverse {
+  flex-direction: column-reverse;
+}
+
+.justifyContentCenter {
+  justify-content: center;
+}
+
+.justifyContentStart {
+  justify-content: flex-start;
+}
+
+.justifyContentEnd {
+  justify-content: flex-end;
+}
+
+.justifyContentBetween {
+  justify-content: space-between;
+}
+
+.justifyContentAround {
+  justify-content: space-around;
+}
+
+.alignItemsCenter {
+  align-items: center;
+}
+
+.alignItemsStart {
+  align-items: flex-start;
+}
+
+.alignItemsEnd {
+  align-items: flex-end;
+}
+
+.alignSelfCenter {
+  align-self: center;
+}
+
+.alignSelfStart {
+  align-self: flex-start;
+}
+
+.alignSelfEnd {
+  align-self: flex-end;
+}
+
+.alignContentStart {
+  align-content: flex-start;
+}
+
+.alignContentEnd {
+  align-content: flex-end;
+}
+
+.alignContentCenter {
+  align-content: center;
+}
+
+.alignContentAround {
+  align-content: space-around;
+}
+
+.alignContentBetween {
+  align-content: space-between;
+}
+
+.flexRowCenter {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.flexRowBetween {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flexRowAround {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.flexRowStart {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.flexRowEnd {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.flexColCenter {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flexColStart {
+  flex-direction: column;
+  justify-content: center;
+}

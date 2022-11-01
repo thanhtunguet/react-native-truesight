@@ -4,6 +4,12 @@
     "paths": {
       "react-native-truesight": [
         "./src/index"
+      ],
+      "assets/*": [
+        "example/assets/*"
+      ],
+      "src/*": [
+        "example/src/*"
       ]
     },
     "allowUnreachableCode": false,
@@ -29,9 +35,6 @@
     "strict": true,
     "target": "esnext",
     "types": [
-      "jest",
-      "react",
-      "react-native",
       "react-native-svg-types"
     ],
     "typeRoots": [

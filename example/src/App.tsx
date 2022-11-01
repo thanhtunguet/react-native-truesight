@@ -1,12 +1,17 @@
 import * as React from 'react';
-
 import { StyleSheet, View } from 'react-native';
-import { TruesightView } from 'react-native-truesight';
+import { SvgIcon } from 'react-native-truesight';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <TruesightView color="#32a852" style={styles.box} />
+      <SvgIcon component={require('../assets/icons/icon.svg')} />
+
+      <SvgIcon
+        component={require('../assets/icons/icon.svg')}
+        solid={true}
+        fill="#FF0000"
+      />
     </View>
   );
 }

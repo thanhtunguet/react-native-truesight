@@ -1,7 +1,7 @@
 import { check, request } from 'react-native-permissions';
 import type { Permission, PermissionStatus } from 'react-native-permissions';
 import React from 'react';
-import { Service } from 'react3l-common';
+import { Service } from 'react3l';
 
 function usePermission(this: AbstractPermissionService) {
   React.useEffect(() => {
