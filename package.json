@@ -83,8 +83,10 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.6",
+    "axios-auth-refresh": "^3.3.4",
     "react-redux": "^8.0.4",
     "react3l": "^7.0.0-rc1",
+    "realm": "^11.1.0",
     "redux": "^4.2.0"
   },
   "devDependencies": {

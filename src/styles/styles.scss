@@ -4,6 +4,8 @@
 
 @import "partials/flexbox.scss";
 
+@import "partials/icon.scss";
+
 @import "partials/spacing.scss";
 
 @import "partials/text.scss";
@@ -11,3 +13,21 @@
 @import "partials/typography.scss";
 
 @import "partials/viewbox.scss";
+
+.container {
+  @extend .w100;
+  @extend .radius10;
+  @extend .mx4;
+  @extend .my2;
+  @extend .p4;
+}
+
+.rowContainer {
+  @extend .w100;
+  @extend .flexRow;
+}
+
+.center {
+  @extend .justifyContentCenter;
+  @extend .alignItemsCenter;
+}

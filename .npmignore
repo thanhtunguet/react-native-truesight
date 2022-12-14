@@ -6,7 +6,6 @@ example/
 ios/build
 lib/typescript/example
 node_modules/
-scripts/
 **/__fixtures__
 **/__mocks__
 **/__tests__

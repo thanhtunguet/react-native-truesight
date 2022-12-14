@@ -1,0 +1,13 @@
+@import "variables";
+
+@each $name, $size in $iconSize {
+  .icon#{$name} {
+    width: #{$size}px;
+    height: #{$size}px;
+  }
+
+  .placeholder#{$name} {
+    width: #{$size}px;
+    height: #{$size}px;
+  }
+}

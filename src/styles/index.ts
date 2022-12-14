@@ -1,29 +1,105 @@
 import { StyleSheet } from 'react-native';
 
 export const atomicStyles = StyleSheet.create({
-  radius36: {
-    borderRadius: 36,
+  radius5: {
+    borderRadius: 5,
   },
-  radius22: {
-    borderRadius: 22,
+  radiusTop5: {
+    borderTopLeftRadius: 5,
+    borderTopRightRadius: 5,
   },
-  radius16: {
-    borderRadius: 16,
-  },
-  radius12: {
-    borderRadius: 12,
-  },
-  radius10: {
-    borderRadius: 10,
+  radiusBottom5: {
+    borderBottomLeftRadius: 5,
+    borderBottomRightRadius: 5,
   },
   radius8: {
     borderRadius: 8,
   },
-  radius5: {
-    borderRadius: 5,
+  radiusTop8: {
+    borderTopLeftRadius: 8,
+    borderTopRightRadius: 8,
   },
-  radius4: {
-    borderRadius: 4,
+  radiusBottom8: {
+    borderBottomLeftRadius: 8,
+    borderBottomRightRadius: 8,
+  },
+  radius10: {
+    borderRadius: 10,
+  },
+  container: {
+    borderRadius: 10,
+    marginTop: 8,
+    marginBottom: 8,
+    paddingTop: 16,
+    paddingRight: 16,
+    paddingBottom: 16,
+    paddingLeft: 16,
+    marginLeft: 16,
+    marginRight: 16,
+    width: '100%',
+  },
+  radiusTop10: {
+    borderTopLeftRadius: 10,
+    borderTopRightRadius: 10,
+  },
+  radiusBottom10: {
+    borderBottomLeftRadius: 10,
+    borderBottomRightRadius: 10,
+  },
+  radius12: {
+    borderRadius: 12,
+  },
+  radiusTop12: {
+    borderTopLeftRadius: 12,
+    borderTopRightRadius: 12,
+  },
+  radiusBottom12: {
+    borderBottomLeftRadius: 12,
+    borderBottomRightRadius: 12,
+  },
+  radius16: {
+    borderRadius: 16,
+  },
+  radiusTop16: {
+    borderTopLeftRadius: 16,
+    borderTopRightRadius: 16,
+  },
+  radiusBottom16: {
+    borderBottomLeftRadius: 16,
+    borderBottomRightRadius: 16,
+  },
+  radius22: {
+    borderRadius: 22,
+  },
+  radiusTop22: {
+    borderTopLeftRadius: 22,
+    borderTopRightRadius: 22,
+  },
+  radiusBottom22: {
+    borderBottomLeftRadius: 22,
+    borderBottomRightRadius: 22,
+  },
+  radius36: {
+    borderRadius: 36,
+  },
+  radiusTop36: {
+    borderTopLeftRadius: 36,
+    borderTopRightRadius: 36,
+  },
+  radiusBottom36: {
+    borderBottomLeftRadius: 36,
+    borderBottomRightRadius: 36,
+  },
+  radius40: {
+    borderRadius: 40,
+  },
+  radiusTop40: {
+    borderTopLeftRadius: 40,
+    borderTopRightRadius: 40,
+  },
+  radiusBottom40: {
+    borderBottomLeftRadius: 40,
+    borderBottomRightRadius: 40,
   },
   flex: {
     flexGrow: 1,
@@ -39,6 +115,10 @@ export const atomicStyles = StyleSheet.create({
   flexRow: {
     flexDirection: 'row',
   },
+  rowContainer: {
+    flexDirection: 'row',
+    width: '100%',
+  },
   flexRowReverse: {
     flexDirection: 'row-reverse',
   },
@@ -50,6 +130,10 @@ export const atomicStyles = StyleSheet.create({
   },
   justifyContentCenter: {
     justifyContent: 'center',
+  },
+  center: {
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   justifyContentStart: {
     justifyContent: 'flex-start',
@@ -128,6 +212,38 @@ export const atomicStyles = StyleSheet.create({
   flexColStart: {
     flexDirection: 'column',
     justifyContent: 'center',
+  },
+  iconS: {
+    width: 16,
+    height: 16,
+  },
+  placeholderS: {
+    width: 16,
+    height: 16,
+  },
+  iconM: {
+    width: 24,
+    height: 24,
+  },
+  placeholderM: {
+    width: 24,
+    height: 24,
+  },
+  iconL: {
+    width: 32,
+    height: 32,
+  },
+  placeholderL: {
+    width: 32,
+    height: 32,
+  },
+  iconXL: {
+    width: 40,
+    height: 40,
+  },
+  placeholderXL: {
+    width: 40,
+    height: 40,
   },
   p0: {
     paddingTop: 0,
